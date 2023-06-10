@@ -1,9 +1,25 @@
+import { JOB_TITLE } from '@/lib/globals';
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Link from 'next/link';
+import { Stack, Heading, Text, Image, Button, Grid, GridItem } from '@chakra-ui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import styles from '@/styles/Home.module.css'
+import { useState } from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
+const GridComponentTwoItems = ({children}) => {
+  return (
+    <>
+      <Grid templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)"]} 
+            direction={["column", "column","row"]} 
+            width={"100%"}
+            alignItems={"center"} 
+            gap={"36px"}>
+        {children}
+      </Grid>
+    </>
+  );
+}
 
 export default function Home() {
   return (
@@ -14,99 +30,62 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+      <main>
+        <div className={styles.sectionOne}>
+          <Button>Jump to projects</Button>
+          <Stack gap={"18px"}>
+            <Heading>Hello! <br/> I am Alex Monteverde and welcome to my portfolio.</Heading>
+            <Text fontSize={"1.5rem"}>I made this website for any one who is interested in my work so that they can easily access it.</Text>
+            <Text fontSize={"1.5rem"}>You can also find me on Github or LinkedIn by clicking the icons below!</Text>
+            <Stack direction={"row"} gap={"36px"}>
+              <Link href='/' target='_blank'>
+                <FontAwesomeIcon fontSize={"3rem"} icon={faGithub}/>
+              </Link>
+              <Link href='/' target='_blank'>
+                <FontAwesomeIcon fontSize={"3rem"} icon={faLinkedin}/>
+              </Link>
+            </Stack>
+          </Stack>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+        <div className={styles.sectionTwo}>
+          <Image src='images/me.png' alt='If you see this text, try to imagine what I look like!' boxSize={["13em", "15em", "20em"]} />
+          <GridComponentTwoItems>
+            <GridItem>
+              <Stack>
+                <Heading>What do I do?</Heading>
+                <Text fontSize={"1.25rem"}>I am a remote {JOB_TITLE} at <Link href={"/"} target='_blank' style={{color: "purple", textDecoration: "underline" }}>Applied Visions Incorporated</Link>.</Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem>
+              <Stack>
+                <Heading>For how long?</Heading>
+                <Text fontSize={"1.25rem"}>I am proud to say that I have been a {JOB_TITLE} for x months.</Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem>
+              <Stack>
+                <Heading>What am I looking for?</Heading>
+                <Text fontSize={"1.25rem"}>I am looking to learn as much as I can, while making an impact on the world. Even if it&apos;s a small impact!</Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem>
+              <Stack>
+                <Heading>Who am I outside of work?</Heading>
+                <Text fontSize={"1.25rem"}>I am a devoted fiancé and dog dad! I love to be creative and watch my ideas come to life. In my free time you can typically find me programming, making music, playing video games or spending time with my family.</Text>
+              </Stack>
+            </GridItem>
+          </GridComponentTwoItems>
         </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+        <div className={styles.sectionThree}>
+            <Stack direction={["column","column","column","row"]} gap={["36px"]} alignItems={"center"} justifyContent={"center"} minHeight={"200px"}>
+              <Image src='/images/appliedVisionsLogo.png' alt='Applied Visions Logo'/>
+              <Image src='/images/danielMauroLogo.png' alt='Applied Visions Logo'/>
+            </Stack>
         </div>
       </main>
     </>

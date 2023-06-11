@@ -1,4 +1,3 @@
-import moment from 'moment/moment';
 import { COMPANY_NAME, COMPANY_LINK, JOB_TITLE, JOB_START } from '@/lib/globals';
 import GridComponent from './gridComponent';
 import Link from 'next/link';

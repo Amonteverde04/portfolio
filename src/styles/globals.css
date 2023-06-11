@@ -7,5 +7,11 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #FAFAFA;
+  background-color: #181818;
+}
+
+.chakra-button:hover {
+  color: #181818;
+  border: solid .5px #181818;
+  background: #FAFAFA !important;
 }

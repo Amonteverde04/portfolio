@@ -1,7 +1,7 @@
 export const skills = [
     {
-        image: "/images/javascript.svg",
-        alt: "Javascript",
+        image: "/images/javascriptTypscript.svg",
+        alt: "JavaScript & TypeScript",
     },
     {
         image: "/images/cSharp.svg",

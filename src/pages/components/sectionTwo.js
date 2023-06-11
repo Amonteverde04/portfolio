@@ -1,14 +1,10 @@
-import { COMPANY_NAME, COMPANY_LINK, JOB_TITLE, JOB_START } from '@/lib/globals';
+import { COMPANY_NAME, COMPANY_LINK, JOB_TITLE } from '@/lib/globals';
 import GridComponent from './gridComponent';
 import Link from 'next/link';
 import { Stack, Heading, Text, GridItem } from '@chakra-ui/react';
 import styles from '@/styles/Home.module.css'
 
 export default function SectionTwo() {
-  const calcMonthsWorked = () => {
-    return JOB_START.fromNow(true);
-  }
-
   return (
       <>
           <Text><b>A LITTLE BIT ABOUT ME</b></Text>
@@ -21,8 +17,8 @@ export default function SectionTwo() {
             </GridItem>
             <GridItem w='100%' h='100%'>
               <Stack>
-                <Heading>For how long?</Heading>
-                <Text fontSize={"1.25rem"}>I am proud to say that I have been a {JOB_TITLE} for <b>{calcMonthsWorked()}</b>.</Text>
+                <Heading>What technology do I use?</Heading>
+                <Text fontSize={"1.25rem"}>At {COMPANY_NAME}, I use <span style={{color: "#1E9E25"}}><b>C#</b></span> to develop and deliver custom systems. Outside of work I develop projects with <span style={{color: "#F0DB4F"}}><b>JavaScript</b></span> or <span style={{color: "#3178C6"}}><b>TypeScript</b></span>.</Text>
               </Stack>
             </GridItem>
             <GridItem w='100%' h='100%'>

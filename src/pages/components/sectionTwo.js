@@ -7,34 +7,46 @@ import styles from '@/styles/Home.module.css'
 export default function SectionTwo() {
   const calcMonthsWorked = () => {
     const currDate = new Date();
-    const monthsElapsed = currDate.getMonth() - JOB_START.getMonth() + (12 * (currDate.getFullYear() - JOB_START.getFullYear()));
+    const jobStartTimeStamp = JOB_START.getTime();
+    const currTimeStamp = currDate.getTime();
+    const calc = new Date(currTimeStamp - jobStartTimeStamp);
+    
+    //Retrieve the date, month and year
+    const calcFormatTmp = calc.getDate() + '-' + (calc.getMonth() + 1) + '-' + calc.getFullYear();
+    
+    //Convert to an array and store
+    const calcFormat = calcFormatTmp.split("-");
 
-    // Months elapsed is 0. Must of started a new career. Assume 1 month.
-    if(monthsElapsed === 0)
+    const monthsElapsed = Number(Math.abs(calcFormat[1]) - 1);
+    const yearsElapsed = Number(Math.abs(calcFormat[2]) - 1970);
+
+    // If we have 0 or 1 elapsed months and 0 years. Return 1 month. 
+    if((monthsElapsed === 0 || monthsElapsed === 1) && yearsElapsed === 0)
     {
       return `1 month`; 
     }
 
-    // Months elapsed is less than 12. Display months.
-    if(monthsElapsed < 12)
+    // If we have less than 12 elapsed months and 0 years. Return x months. 
+    if(monthsElapsed < 12 && yearsElapsed === 0)
     {
-      return monthsElapsed > 1 ? `${monthsElapsed} months` : `${monthsElapsed} month`; 
+      return `${monthsElapsed} months`; 
     }
 
-    // Months elapsed ended up being exactly 1, 2, 3... years.
-    if(monthsElapsed % 12 === 0)
+    // If we have exactly 1 year.
+    //  If we have 0 months, return 1 year. 
+    //  If we have 1 month, return 1 year and 1 month.
+    //  else we have x months, return 1 year and x months.
+    if(yearsElapsed === 1)
     {
-      const displayYears = (monthsElapsed / 12).toPrecision(1);
-      return monthsElapsed > 12 ? `${displayYears} years` : `${displayYears} year`; 
+      return monthsElapsed === 0 ? `${yearsElapsed} year` : 
+      monthsElapsed === 1 ? `${yearsElapsed} year and ${monthsElapsed} month` : `${yearsElapsed} year and ${monthsElapsed} months`;
     }
 
-    // Months elapsed is some years and months.
-    if(monthsElapsed > 12)
-    {
-      const displayYears = (monthsElapsed / 12).toPrecision(1);
-      const displayMonths = monthsElapsed - (12*displayYears);
-      return displayYears > 2 ? `${displayYears} years and ${displayMonths} months` : `${displayYears} year and ${displayMonths} months`; 
-    }
+    //  If we have 0 months, return x years. 
+    //  If we have 1 month, return x years and 1 month.
+    //  else we have x months, return x year and x months.
+    return monthsElapsed === 0 ? 
+      `${yearsElapsed} years` : monthsElapsed === 1 ? `${yearsElapsed} years and ${monthsElapsed} month` : `${yearsElapsed} years and ${monthsElapsed} months`;
   }
 
   return (

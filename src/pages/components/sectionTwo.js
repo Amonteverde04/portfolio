@@ -9,8 +9,6 @@ export default function SectionTwo() {
     const currDate = new Date();
     const monthsElapsed = currDate.getMonth() - JOB_START.getMonth() + (12 * (currDate.getFullYear() - JOB_START.getFullYear()));
 
-    return monthsElapsed;
-
     // Months elapsed is 0. Must of started a new career. Assume 1 month.
     if(monthsElapsed === 0)
     {

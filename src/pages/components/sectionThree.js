@@ -9,7 +9,7 @@ export default function SectionThree() {
             <GridComponent columns={2}>
               {PAST_WORK.map((item, index) => (
                 <GridItem key={index} display={"flex"} alignItems={"center"} justifyContent={"center"}>
-                  <Image src={item.image} alt={item.alt} height={item.sizing} width={item.sizing}/>
+                  <Image src={item.image} loading="lazy" alt={item.alt} height={item.sizing} width={item.sizing}/>
                 </GridItem>
               ))}
             </GridComponent>

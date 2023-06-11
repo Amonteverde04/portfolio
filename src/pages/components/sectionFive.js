@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
       <>
         <Tooltip label={props.alt}>
           <a href={props.link} rel="noopener" target='_blank'>
-            <Image className={styles.projectImage} src={props.image} alt={props.alt} objectFit={"cover"} borderRadius={"0.375rem"}/>
+            <Image loading="lazy" className={styles.projectImage} src={props.image} alt={props.alt} objectFit={"cover"} borderRadius={"0.375rem"}/>
           </a>
         </Tooltip>
       </>

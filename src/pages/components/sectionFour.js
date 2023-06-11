@@ -10,7 +10,7 @@ export default function sectionFour() {
               {skills.map((item, index) => (
                 <GridItem key={index} display={"flex"} alignItems={"center"} justifyContent={"center"}>
                   <Tooltip label={item.alt}>
-                    <Image src={item.image} alt={item.alt} height={"25%"} width={"25%"}/>
+                    <Image src={item.image} loading="lazy" alt={item.alt} height={"25%"} width={"25%"}/>
                   </Tooltip>
                 </GridItem>
               ))}

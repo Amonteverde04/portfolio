@@ -1,5 +1,7 @@
+import moment from 'moment/moment';
+
 export const JOB_TITLE="Software Engineer";
-export const JOB_START= new Date("2022, 09, 01");
+export const JOB_START= moment("2022-09-01");
 export const COMPANY_NAME="Applied Visions Incorporated";
 export const COMPANY_LINK="https://www.avi.com/";
 export const GITHUB="https://github.com/Amonteverde04";

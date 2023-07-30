@@ -1,5 +1,11 @@
 export const projects = [
     {
+        link: "https://www.soundport.io",
+        image: "images/soundPort.png",
+        alt: "SoundPort Web",
+        description: "I created this website to start building a community around my upcoming app, SoundPort. SoundPort will be a revolutionary tool for music artists to meet one another and collaborate.",
+    },
+    {
         link: "https://devpost.com/software/nodemarket-platform",
         image: "images/nodeMarket.png",
         alt: "NodeMarket",

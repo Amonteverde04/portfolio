@@ -30,7 +30,7 @@ export default function SectionTwo() {
             <GridItem w='100%' h='100%'>
               <Stack>
                 <Heading>Who am I outside of work?</Heading>
-                <Text fontSize={"1.25rem"}>I am a devoted fiancé and dog dad! I love to be creative and watch my ideas come to life. In my free time you can typically find me programming, making music, playing video games or spending time with my family.</Text>
+                <Text fontSize={"1.25rem"}>I love to be creative and watch my ideas come to life. In my free time you can typically find me programming, line dancing, making music, playing video games or spending time with my family and friends.</Text>
               </Stack>
             </GridItem>
           </GridComponent>

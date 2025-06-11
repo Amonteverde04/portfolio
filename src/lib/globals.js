@@ -1,17 +1,27 @@
 export const JOB_TITLE="Software Engineer";
-export const COMPANY_NAME="Applied Visions Incorporated";
-export const COMPANY_LINK="https://www.avi.com/";
+export const COMPANY_NAME="Highwoods Properties";
+export const COMPANY_LINK="https://www.highwoods.com/";
 export const GITHUB="https://github.com/Amonteverde04";
 export const LINKEDIN="https://www.linkedin.com/in/alex-monteverde-a83146195/";
 export const PAST_WORK=[
-    {
-        image: "/images/appliedVisionsLogo.png",
-        alt: "Applied Visions Logo.",
+        {
+        image: "/images/highwoodsLogo.png",
+        alt: "Highwoods Properties Logo",
         sizing: ["100%","90%","80%","80%","60%"]
     },
     {
+        image: "/images/appliedVisionsLogo.png",
+        alt: "Applied Visions Logo",
+        sizing: ["100%","90%","80%","80%","60%"]
+    },
+    {
+        image: "/images/elektraTattoosLogo.png",
+        alt: "Elektra Tattoos Logo",
+        sizing: ["50%","50%","40%","40%","30%"]
+    },
+    {
         image: "/images/danielMauroLogo.png",
-        alt: "Daniel Mauro Logo.",
+        alt: "Daniel Mauro Logo",
         sizing: ["50%","50%","40%","40%","30%"]
     }
 ];

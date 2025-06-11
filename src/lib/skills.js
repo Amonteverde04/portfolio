@@ -8,16 +8,12 @@ export const skills = [
         alt: "C#",
     },
     {
-        image: "/images/cPlusPlus.svg",
-        alt: "C++",
+        image: "/images/go.svg",
+        alt: "Go",
     },
     {
-        image: "/images/python.svg",
-        alt: "Python",
-    },
-    {
-        image: "/images/next.svg",
-        alt: "Next.js",
+        image: "/images/sql.svg",
+        alt: "SQL",
     },
     {
         image: "/images/react.svg",
@@ -28,23 +24,27 @@ export const skills = [
         alt: "Blazor",
     },
     {
-        image: "/images/sql.svg",
-        alt: "SQL",
-    },
-    {
-        image: "/images/mui.svg",
-        alt: "MaterialUI",
-    },
-    {
-        image: "/images/chakra.svg",
-        alt: "ChakraUI",
-    },
-    {
-        image: "/images/mud.svg",
-        alt: "MudBlazor",
+        image: "/images/python.svg",
+        alt: "Python",
     },
     {
         image: "/images/mongo.svg",
         alt: "MongoDB",
+    },
+    {
+        image: "/images/next.svg",
+        alt: "Next.js",
+    },
+    {
+        image: "/images/dotnet.svg",
+        alt: ".NET",
+    },
+    {
+        image: "/images/langchain.svg",
+        alt: "LangChain",
+    },
+    {
+        image: "/images/chroma.svg",
+        alt: "Chroma",
     },
 ] 

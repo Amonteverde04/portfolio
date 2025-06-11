@@ -18,7 +18,7 @@ export default function SectionOne() {
     return (
         <>
             <Stack direction={["column","column","column","row"]} gap={"36px"} alignItems={"center"} justifyContent={"space-around"}>
-                <Image loading="eager" src='images/me.png' alt='If you see this text, try to imagine what I look like!' boxSize={["15em", "20em", "25em"]} />
+                <Image loading="eager" src='images/me.png' alt='If you see this text, try to imagine what I look like!' boxSize={["15em", "20em", "25em"]} borderRadius="full" />
                 <Stack gap={"18px"}>
                   <Heading>Hello! <br/> I am Alex Monteverde and welcome to my portfolio.</Heading>
                   <Text fontSize={"1.5rem"}>I made this website for any one who is interested in my work so that they can easily access it.</Text>

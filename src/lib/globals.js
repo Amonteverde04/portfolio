@@ -15,9 +15,14 @@ export const PAST_WORK=[
         sizing: ["100%","90%","80%","80%","60%"]
     },
     {
-        image: "/images/elektraTattoosLogo.png",
+        image: "/images/elektraTattoosLogoWords.png",
         alt: "Elektra Tattoos Logo",
-        sizing: ["50%","50%","40%","40%","30%"]
+        sizing: ["90%","90%","70%","60%","50%"]
+    },
+    {
+        image: "/images/titosPetServicesLogoNoBg.png",
+        alt: "Tito's Pet Services Logo",
+        sizing: ["90%","90%","70%","60%","50%"]
     },
     {
         image: "/images/danielMauroLogo.png",

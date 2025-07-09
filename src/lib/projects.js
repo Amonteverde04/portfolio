@@ -1,5 +1,23 @@
 export const projects = [
     {
+        link: "https://www.titospetservices.com/",
+        image: "images/titosPetServicesLogo.png",
+        alt: "Tito's Pet Services",
+        description: "The official Tito's Pet Services website. Made with Next.js, TypeScript, Radix-UI, Resend.",
+    },
+    {
+        link: "https://elektratattoos.com/",
+        image: "images/elektraTattoosLogo.png",
+        alt: "Elektra Tattoos",
+        description: "The official Elektra Tattoos website. Made with Next.js, TypeScript, Resend.",
+    },
+    {
+        link: "https://danielmauromusic.com/",
+        image: "images/danielMauroHeadShot.png",
+        alt: "Daniel Mauro Music",
+        description: "The official Daniel Mauro website. Made with Next.js, MongoDB and MUI.",
+    },
+    {
         link: "https://www.soundport.io",
         image: "images/soundPort.png",
         alt: "SoundPort Web",
@@ -16,18 +34,6 @@ export const projects = [
         image: "images/ghost.png",
         alt: "GHΘST",
         description: "This project was also created for the Theta Network 2023 Hackathon. Built with Next.js, Solidity, MUI and Supabase. GHΘST enables users to anonymously upload directories, enabling web hosting on the blockchain.",
-    },
-    {
-        link: "https://elektra-tattoos.vercel.app/",
-        image: "images/___.png",
-        alt: "Elektra Tattoos",
-        description: "The official Elektra Tattoos website. Made with Next.js.",
-    },
-    {
-        link: "https://danielmauromusic.com/",
-        image: "images/danielMauroHeadShot.png",
-        alt: "Daniel Mauro Music",
-        description: "The official Daniel Mauro website. Made with Next.js, MongoDB and MUI.",
     },
     {
         link: "https://github.com/CDDR1/bcs-426-capstone-oasis",

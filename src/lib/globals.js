@@ -17,14 +17,16 @@ export const PAST_WORK=[
         link: "https://www.avi.com/"
     },
     {
-        image: "/images/elektraTattoosLogoWords.png",
-        alt: "Elektra Tattoos Logo",
-        sizing: ["90%","90%","70%","60%","50%"]
-    },
-    {
         image: "/images/titosPetServicesLogoNoBg.png",
         alt: "Tito's Pet Services Logo",
-        sizing: ["90%","90%","70%","60%","50%"]
+        sizing: ["90%","90%","70%","60%","50%"],
+        link: "https://www.titospetservices.com/",
+    },
+    {
+        image: "/images/elektraTattoosLogoWords.png",
+        alt: "Elektra Tattoos Logo",
+        sizing: ["90%","90%","70%","60%","50%"],
+        link: "https://elektratattoos.com/",
     },
     {
         image: "/images/danielMauroLogo.png",

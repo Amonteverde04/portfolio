@@ -1,5 +1,11 @@
 export const projects = [
     {
+        link: "https://heic2whatever.com/",
+        image: "images/heic2whatever.svg",
+        alt: "HEIC2Whatever",
+        description: "A tool to convert HEIC images to JPG. Made with Next.js, TypeScript, TailwindCSS.",
+    },
+    {
         link: "https://www.titospetservices.com/",
         image: "images/titosPetServicesLogo.png",
         alt: "Tito's Pet Services",

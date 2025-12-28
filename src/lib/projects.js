@@ -23,12 +23,12 @@ export const projects = [
         alt: "Daniel Mauro Music",
         description: "The official Daniel Mauro website. Made with Next.js, MongoDB and MUI.",
     },
-    {
-        link: "https://www.soundport.io",
-        image: "images/soundPort.png",
-        alt: "SoundPort Web",
-        description: "I created this website to start building a community around my upcoming app, SoundPort. SoundPort will be a revolutionary tool for music artists to meet one another and collaborate.",
-    },
+    //{
+    //    link: "https://www.soundport.io",
+    //    image: "images/soundPort.png",
+    //    alt: "SoundPort Web",
+    //    description: "I created this website to start building a community around my upcoming app, SoundPort. SoundPort will be a revolutionary tool for music artists to meet one another and collaborate.",
+    //},
     {
         link: "https://devpost.com/software/nodemarket-platform",
         image: "images/nodeMarket.png",

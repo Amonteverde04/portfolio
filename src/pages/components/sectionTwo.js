@@ -19,7 +19,7 @@ export default function SectionTwo() {
             <GridItem w='100%' h='100%'>
               <Stack>
                 <Heading>What technology do I use?</Heading>
-                <Text fontSize={"1.25rem"}>At {COMPANY_NAME}, I use <span style={{color: "#1E9E25"}}><b>C#</b></span> to develop and deliver custom internal tools and applications. I also develop applications with a variety of tools such as <span style={{color: "#3571a3"}}><b>Python</b></span>, <span style={{color: "#2dbcaf"}}><b>Go</b></span>, <span style={{color: "#F0DB4F"}}><b>JavaScript</b></span>, and <span style={{color: "#3178C6"}}><b>TypeScript</b></span>.</Text>
+                <Text fontSize={"1.25rem"}>At {COMPANY_NAME}, I use <span style={{color: "#3178C6"}}><b>TypeScript</b></span> and <span style={{color: "#1E9E25"}}><b>C#</b></span> to develop and deliver custom internal tools and applications. I also develop applications with a variety of languages such as <span style={{color: "#3571a3"}}><b>Python</b></span>, <span style={{color: "#2dbcaf"}}><b>Go</b></span>, and <span style={{color: "#F0DB4F"}}><b>JavaScript</b></span>.</Text>
               </Stack>
             </GridItem>
             <GridItem w='100%' h='100%'>

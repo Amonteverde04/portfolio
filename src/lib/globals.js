@@ -1,43 +1,50 @@
-export const JOB_TITLE="Software Engineer";
-export const COMPANY_NAME="Measurement Inc.";
-export const COMPANY_LINK="https://www.measurementinc.com/";
-export const GITHUB="https://github.com/Amonteverde04";
-export const LINKEDIN="https://www.linkedin.com/in/alex-monteverde-a83146195/";
-export const PAST_WORK=[
-    {
-        image: "/images/measurementLogo.png",
-        alt: "Measurement Logo",
-        sizing: ["100%","90%","80%","80%","60%"],
-        link: "https://www.measurementinc.com/"
-    },
-    {
-        image: "/images/highwoodsLogo.png",
-        alt: "Highwoods Properties Logo",
-        sizing: ["100%","90%","80%","80%","60%"],
-        link: "https://www.highwoods.com/"
-    },
-    {
-        image: "/images/appliedVisionsLogo.png",
-        alt: "Applied Visions Logo",
-        sizing: ["100%","90%","80%","80%","60%"],
-        link: "https://www.avi.com/"
-    },
-    {
-        image: "/images/titosPetServicesLogoNoBg.png",
-        alt: "Tito's Pet Services Logo",
-        sizing: ["90%","90%","70%","60%","50%"],
-        link: "https://www.titospetservices.com/",
-    },
-    {
-        image: "/images/elektraTattoosLogoWords.png",
-        alt: "Elektra Tattoos Logo",
-        sizing: ["90%","90%","70%","60%","50%"],
-        link: "https://elektratattoos.com/",
-    },
-    {
-        image: "/images/danielMauroLogo.png",
-        alt: "Daniel Mauro Logo",
-        sizing: ["50%","50%","40%","40%","30%"],
-        link: "https://danielmauromusic.com/"
-    }
+export const JOB_TITLE = "Software Engineer";
+export const COMPANY_NAME = "ACA Global";
+export const COMPANY_LINK = "https://www.acaglobal.com/";
+export const GITHUB = "https://github.com/Amonteverde04";
+export const LINKEDIN =
+  "https://www.linkedin.com/in/alex-monteverde-a83146195/";
+export const PAST_WORK = [
+  {
+    image: "/images/aca-logo-white.png",
+    alt: "ACA Global Logo",
+    sizing: ["100%", "90%", "80%", "80%", "35%"],
+    link: "https://www.acaglobal.com/",
+  },
+  {
+    image: "/images/measurementLogo.png",
+    alt: "Measurement Logo",
+    sizing: ["100%", "90%", "80%", "80%", "60%"],
+    link: "https://www.measurementinc.com/",
+  },
+  {
+    image: "/images/highwoodsLogo.png",
+    alt: "Highwoods Properties Logo",
+    sizing: ["100%", "90%", "80%", "80%", "60%"],
+    link: "https://www.highwoods.com/",
+  },
+  {
+    image: "/images/appliedVisionsLogo.png",
+    alt: "Applied Visions Logo",
+    sizing: ["100%", "90%", "80%", "80%", "60%"],
+    link: "https://www.avi.com/",
+  },
+  //{
+  //  image: "/images/titosPetServicesLogoNoBg.png",
+  //  alt: "Tito's Pet Services Logo",
+  //  sizing: ["90%", "90%", "70%", "60%", "50%"],
+  //  link: "https://www.titospetservices.com/",
+  //},
+  {
+    image: "/images/elektraTattoosLogoWords.png",
+    alt: "Elektra Tattoos Logo",
+    sizing: ["90%", "90%", "70%", "60%", "50%"],
+    link: "https://elektratattoos.com/",
+  },
+  //{
+  //  image: "/images/danielMauroLogo.png",
+  //  alt: "Daniel Mauro Logo",
+  //  sizing: ["50%", "50%", "40%", "40%", "30%"],
+  //  link: "https://danielmauromusic.com/",
+  //},
 ];
